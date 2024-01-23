@@ -13,7 +13,7 @@ public class HomePage {
 	public WebDriver driver;
 	PageAction page;
 	
-	@FindBy(xpath="//div[@class='main-navigation']//a[text()='Automobile']")
+	@FindBy(xpath="//div[@class='main-navigation']//a[text()='Automobil']")
 	WebElement automobile;
 	
 	public HomePage(WebDriver driver) throws Exception, Exception {

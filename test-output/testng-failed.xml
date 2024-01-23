@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.SampleApp">
+      <class name="TestCases.Assertion">
         <methods>
-          <include name="verifyAutomobile"/>
-          <include name="closeApplication"/>
-          <include name="openApplication"/>
+          <include name="verifyTest"/>
         </methods>
-      </class> <!-- TestCases.SampleApp -->
+      </class> <!-- TestCases.Assertion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

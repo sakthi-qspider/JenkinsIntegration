@@ -1,4 +1,4 @@
-package BaseFactory;
+package PDFReport;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -133,7 +133,7 @@ private static class HeaderFooterPageEvent extends PdfPageEventHelper {
         // Create a cell and add the header text
         //Paragraph headerText = new Paragraph("Collibra");
         BaseColor textColor = new BaseColor(169,169,169);
-        Phrase headerText=new Phrase("Collibra",new Font(Font.FontFamily.HELVETICA, 12, Font.BOLD,textColor));
+        Phrase headerText=new Phrase("Type your Project Name",new Font(Font.FontFamily.HELVETICA, 12, Font.BOLD,textColor));
        
         PdfPCell headerCell = new PdfPCell(headerText);
         headerCell.setBorder(PdfPTable.ALIGN_CENTER);
@@ -162,7 +162,7 @@ private static class HeaderFooterPageEvent extends PdfPageEventHelper {
 
         // Create a cell and add the footer text
         BaseColor footertextColor = new BaseColor(169,169,169);
-        Phrase footerText=new Phrase("Tyson Foods...",new Font(Font.FontFamily.HELVETICA, 12, Font.BOLD,footertextColor));
+        Phrase footerText=new Phrase("Type your Company Name/Client Name",new Font(Font.FontFamily.HELVETICA, 12, Font.BOLD,footertextColor));
        // Paragraph footerText = new Paragraph("Tyson Foods...");
         PdfPCell footerCell = new PdfPCell(footerText);
         footerCell.setBorder(PdfPTable.ALIGN_CENTER);

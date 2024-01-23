@@ -1,4 +1,4 @@
-package BaseFactory;
+package PDFReport;
 
 import org.testng.annotations.Test;
 

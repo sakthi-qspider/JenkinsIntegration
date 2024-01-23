@@ -6,12 +6,23 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
 import Utility.ConfigReader;
+import Utility.PageAction;
 
 public class BaeTest {
+	
+	public ExtentReports report;
+	public ExtentTest test;
+	public String path="./Report/"+System.currentTimeMillis()+"ExtentReportResults.html";
 	public WebDriver driver;
 	
 	//String browserName="Firefox";
@@ -37,6 +48,8 @@ public class BaeTest {
 			System.out.println("Please Specifi the browser....");
 		}
 		driver.manage().window().maximize();
+		report=new ExtentReports(path, true);
+		test=report.startTest("Demo");
 		driver.get(ConfigReader.getConfig("url"));
 		
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Long.parseLong(ConfigReader.getConfig("PageLoad"))));
@@ -48,8 +61,21 @@ public class BaeTest {
 	
 	
 	@AfterMethod
-	public void closeApplication() {
+	public void closeApplication(ITestResult result) throws Exception {
+		
+		if(result.getStatus()==ITestResult.FAILURE) {
+			test.log(LogStatus.FAIL,result.getName());
+			String screenshotPath =PageAction.getScreenhot(driver, result.getName());
+			test.log(LogStatus.FAIL, test.addScreenCapture(screenshotPath));
+		}
+		
+		
+		
+		
+		
 		driver.quit();
+		report.endTest(test);
+		report.flush();
 	}
 
 }
