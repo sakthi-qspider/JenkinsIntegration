@@ -3,11 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="ExcelDemo.dataTest">
         <methods>
           <include name="sample"/>
         </methods>
       </class> <!-- ExcelDemo.dataTest -->
+=======
+      <class name="TestCases.Assertion">
+        <methods>
+          <include name="verifyTest"/>
+        </methods>
+      </class> <!-- TestCases.Assertion -->
+>>>>>>> 4adc410aae5fc4a8fce5c68f06fbe2485050753c
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,6 +2,7 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2023-12-19T20:42:09 IST" name="Default suite" finished-at="2023-12-19T20:42:10 IST" duration-ms="673">
     <groups>
     </groups>
@@ -72,6 +73,18 @@
           </reporter-output>
         </test-method> <!-- sample -->
       </class> <!-- ExcelDemo.dataTest -->
+=======
+  <suite started-at="2024-01-20T18:58:51 IST" name="Default suite" finished-at="2024-01-20T18:59:10 IST" duration-ms="18797">
+    <groups>
+    </groups>
+    <test started-at="2024-01-20T18:58:51 IST" name="Default test" finished-at="2024-01-20T18:59:10 IST" duration-ms="18797">
+      <class name="TestCases.Assertion">
+        <test-method signature="verifyTest()[pri:0, instance:TestCases.Assertion@43195e57]" started-at="2024-01-20T18:58:51 IST" name="verifyTest" finished-at="2024-01-20T18:59:10 IST" duration-ms="18765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTest -->
+      </class> <!-- TestCases.Assertion -->
+>>>>>>> 4adc410aae5fc4a8fce5c68f06fbe2485050753c
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
