@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\sakth\AppData\Local\Temp\testng-eclipse--832932492\testng-customsuite.xml</span>
+                    <span>C:\Users\sakth\AppData\Local\Temp\testng-eclipse--367658295\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="TestCases.SampleApp" class="method navigator-link" hash-for-method="verifyAutomobile">verifyAutomobile</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="ExcelDemo.dataTest" class="method navigator-link" hash-for-method="sample(Kavin, 1234TEst)">sample(Kavin, 1234TEst)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ExcelDemo.dataTest" class="method navigator-link" hash-for-method="sample(Kothai, qwers)">sample(Kothai, qwers)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ExcelDemo.dataTest" class="method navigator-link" hash-for-method="sample(Sakthi, Test)">sample(Sakthi, Test)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ExcelDemo.dataTest" class="method navigator-link" hash-for-method="sample(Navin, Welcome)">sample(Navin, Welcome)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,14 +137,39 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestCases.SampleApp</span>
+              <span class="class-name">ExcelDemo.dataTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyAutomobile">
-                  </a> <!-- verifyAutomobile -->
-                  <span class="method-name">verifyAutomobile</span>
+                  <a name="sample(Kavin, 1234TEst)">
+                  </a> <!-- sample(Kavin, 1234TEst) -->
+                  <span class="method-name">sample</span>
+                  <span class="parameters">(Kavin, 1234TEst)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sample(Kothai, qwers)">
+                  </a> <!-- sample(Kothai, qwers) -->
+                  <span class="method-name">sample</span>
+                  <span class="parameters">(Kothai, qwers)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sample(Sakthi, Test)">
+                  </a> <!-- sample(Sakthi, Test) -->
+                  <span class="method-name">sample</span>
+                  <span class="parameters">(Sakthi, Test)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sample(Navin, Welcome)">
+                  </a> <!-- sample(Navin, Welcome) -->
+                  <span class="method-name">sample</span>
+                  <span class="parameters">(Navin, Welcome)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +177,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\sakth\AppData\Local\Temp\testng-eclipse--832932492\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\sakth\AppData\Local\Temp\testng-eclipse--367658295\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,7 +186,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestCases.SampleApp&quot;/&gt;
+      &lt;class name=&quot;ExcelDemo.dataTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;sample&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- ExcelDemo.dataTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -186,16 +230,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyAutomobile')
-data.setCell(0, 2, 'TestCases.SampleApp')
-data.setCell(0, 3, 119);
+data.setCell(0, 1, 'sample')
+data.setCell(0, 2, 'ExcelDemo.dataTest')
+data.setCell(0, 3, 9);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'sample')
+data.setCell(1, 2, 'ExcelDemo.dataTest')
+data.setCell(1, 3, 1);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'sample')
+data.setCell(2, 2, 'ExcelDemo.dataTest')
+data.setCell(2, 3, 1);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'sample')
+data.setCell(3, 2, 'ExcelDemo.dataTest')
+data.setCell(3, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 119 ms</span>
+              <span class="suite-total-time">Total running time: 11 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -221,19 +277,23 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.SampleApp</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openApplication</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="chronological-class-name">ExcelDemo.dataTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">verifyAutomobile</span>
-                <span class="method-start">7098 ms</span>
+                <span class="method-name">sample(Navin, Welcome)</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApplication</span>
-                <span class="method-start">7218 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">sample(Kavin, 1234TEst)</span>
+                <span class="method-start">13 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sample(Kothai, qwers)</span>
+                <span class="method-start">14 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sample(Sakthi, Test)</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -1,25 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-09T19:15:13 IST" name="Default suite" finished-at="2023-12-09T19:15:21 IST" duration-ms="8168">
+  <suite started-at="2023-12-19T20:42:09 IST" name="Default suite" finished-at="2023-12-19T20:42:10 IST" duration-ms="673">
     <groups>
     </groups>
-    <test started-at="2023-12-09T19:15:13 IST" name="Default test" finished-at="2023-12-09T19:15:21 IST" duration-ms="8168">
-      <class name="TestCases.SampleApp">
-        <test-method is-config="true" signature="openApplication()[pri:0, instance:TestCases.SampleApp@72f926e6]" started-at="2023-12-09T19:15:13 IST" name="openApplication" finished-at="2023-12-09T19:15:20 IST" duration-ms="7098" status="PASS">
+    <test started-at="2023-12-19T20:42:09 IST" name="Default test" finished-at="2023-12-19T20:42:10 IST" duration-ms="673">
+      <class name="ExcelDemo.dataTest">
+        <test-method signature="sample(java.lang.String,java.lang.String)[pri:0, instance:ExcelDemo.dataTest@16ec5519]" started-at="2023-12-19T20:42:10 IST" name="sample" data-provider="empLogin" finished-at="2023-12-19T20:42:10 IST" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Navin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Welcome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method signature="verifyAutomobile()[pri:0, instance:TestCases.SampleApp@72f926e6]" started-at="2023-12-09T19:15:20 IST" name="verifyAutomobile" finished-at="2023-12-09T19:15:20 IST" duration-ms="119" status="PASS">
+        </test-method> <!-- sample -->
+        <test-method signature="sample(java.lang.String,java.lang.String)[pri:0, instance:ExcelDemo.dataTest@16ec5519]" started-at="2023-12-19T20:42:10 IST" name="sample" data-provider="empLogin" finished-at="2023-12-19T20:42:10 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kavin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234TEst]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAutomobile -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:TestCases.SampleApp@72f926e6]" started-at="2023-12-09T19:15:20 IST" name="closeApplication" finished-at="2023-12-09T19:15:21 IST" duration-ms="922" status="PASS">
+        </test-method> <!-- sample -->
+        <test-method signature="sample(java.lang.String,java.lang.String)[pri:0, instance:ExcelDemo.dataTest@16ec5519]" started-at="2023-12-19T20:42:10 IST" name="sample" data-provider="empLogin" finished-at="2023-12-19T20:42:10 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kothai]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qwers]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- TestCases.SampleApp -->
+        </test-method> <!-- sample -->
+        <test-method signature="sample(java.lang.String,java.lang.String)[pri:0, instance:ExcelDemo.dataTest@16ec5519]" started-at="2023-12-19T20:42:10 IST" name="sample" data-provider="empLogin" finished-at="2023-12-19T20:42:10 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sakthi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample -->
+      </class> <!-- ExcelDemo.dataTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
